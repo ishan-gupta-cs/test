@@ -27,7 +27,7 @@ def extract_video_id(youtube_url):
         return parsed_url.path.lstrip('/')
     return None
 
-# def get_transcript(youtube_url):
+def get_transcript(youtube_url):
     video_id = extract_video_id(youtube_url)
     if(not video_id):
         return "invalid youtube url"
